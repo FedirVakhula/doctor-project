@@ -1,0 +1,51 @@
+:host {
+    width: 98%;
+}
+input {
+    margin: 8px;
+    width: 30%;
+    outline: none;
+}
+
+h3 {
+    text-align: center;
+}
+
+form {
+    width: 100%;
+}
+
+.reg-form {
+    border: solid 1px;
+    width: 100%;
+    background: rgb(93, 192, 209);
+}
+
+.input-control {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.select-form {
+    width: 30%;
+}
+
+select {
+  color: gray;
+}
+
+.input-control-button {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.help-block {
+    color: rgb(170, 36, 36);
+}
+
+.has-error {
+    border: rgb(170, 36, 36) solid 2px;
+}

@@ -1,0 +1,21 @@
+<div *ngIf="patients">
+  <div class="container-information">
+    <p for="">Імя та прізвеще</p>
+    <p for="">Адреса</p>
+    <p for="">Інформація</p>
+  </div>
+  <hr>
+  <div *ngFor="let patient of patients" class="container-user">
+    <div class="container-information">
+      <div>
+        <p>{{patient.firstName}}, {{patient.lastName}}</p>
+      </div>
+      <div>
+        <p>{{patient.cityName}},{{patient.streetName}},{{patient.numberHouse}}</p>
+      </div>
+      <div>
+        <button (click)="info(patient)">інфо</button>
+      </div>
+    </div>
+  </div>
+</div>

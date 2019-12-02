@@ -1,0 +1,22 @@
+.demartment-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    height: auto;
+}
+
+.demartment-container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px rgb(255, 255, 255);
+    background: rgb(12, 133, 233);
+    height: 270px;
+    width: 270px;
+}
+
+.demartment-container :hover {
+    background: rgb(93, 192, 209);
+}

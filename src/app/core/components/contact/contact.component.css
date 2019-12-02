@@ -1,0 +1,8 @@
+.displey-row {
+  display: flex;
+  align-items: center;
+}
+
+div>p {
+    margin: 0;
+}

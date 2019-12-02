@@ -1,0 +1,48 @@
+.container-footer {
+    border: solid 1px;
+    margin-right: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+.logo-company {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 14%;
+    margin-top: 0.5%;
+}
+
+.button-Log-Out {
+    display: flex;
+    align-items: center;
+}
+
+menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    height: 35px;
+}
+
+.button-Log-Out div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 125px;
+    height: 35px;
+    margin-right: 1%;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    height: 150px;
+    width: 130px;
+}

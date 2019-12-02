@@ -1,0 +1,17 @@
+.container-information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3% 0;
+  padding: 1%;
+
+}
+
+.container-user {
+  border: solid 1px;
+  background: rgb(93, 192, 209);
+}
+
+:host {
+  width: 72%;
+}

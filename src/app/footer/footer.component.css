@@ -1,0 +1,12 @@
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: solid 1px;
+    height: 70px;
+    margin-top: 0.5%;
+}
+
+a {
+    text-decoration: none;
+}

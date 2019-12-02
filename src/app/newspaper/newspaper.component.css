@@ -1,0 +1,35 @@
+.continer-news {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  height: 390px;
+  border: solid 1px;
+  background: rgb(35, 138, 185);
+}
+
+.continer-news div {
+  margin: 2%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.news-paper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 88%;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.news-foto {
+  height: 100%;
+}
+.container-foto {
+    height: 94%;
+}

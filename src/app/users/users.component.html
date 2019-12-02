@@ -1,0 +1,33 @@
+<div *ngIf="list">
+  <div class="container-information">
+    <label for="">Імя та прізвеще</label>
+    <label for="">Спеціальність</label>
+    <label for="">Запис</label>
+  </div>
+  <hr>
+  <div *ngIf="myDoc" class="container-user container-information">
+    <h3>Ваш сімейний лікар</h3>
+    <div>
+      <p>{{myDoc.firstName}} {{myDoc.lastName}}</p>
+    </div>
+    <div>
+      <p>{{myDoc.specialty}}</p>
+    </div>
+    <div>
+      <button>Записатися</button>
+    </div>
+  </div>
+  <div *ngFor="let message of list" class="container-user">
+    <div class="container-information">
+      <div>
+        <p>{{message.firstName}}, {{message.lastName}}</p>
+      </div>
+      <div>
+        <p>{{message.specialty}}</p>
+      </div>
+      <div>
+        <button>Записатися</button>
+      </div>
+    </div>
+  </div>
+</div>

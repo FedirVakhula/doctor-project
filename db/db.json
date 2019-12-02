@@ -1,0 +1,396 @@
+{
+  "doctors": [
+    {
+      "id": 266,
+      "specialty": "therapist",
+      "patients": [
+        997,
+        301,
+        790,
+        898,
+        26,
+        918,
+        381
+      ],
+      "firstName": "Леся",
+      "lastName": "Вахула"
+    },
+    {
+      "id": 897,
+      "specialty": "oculist",
+      "patients": [],
+      "firstName": "33",
+      "lastName": "33"
+    },
+    {
+      "id": 861,
+      "specialty": "therapist",
+      "patients": [
+        997
+      ],
+      "firstName": "33",
+      "lastName": "33"
+    },
+    {
+      "id": 345,
+      "specialty": "therapist",
+      "patients": [
+        503,
+        894
+      ],
+      "firstName": "therapist",
+      "lastName": "therapist"
+    },
+    {
+      "id": 903,
+      "specialty": "surgeon",
+      "patients": [],
+      "firstName": "55",
+      "lastName": "33"
+    },
+    {
+      "id": 102,
+      "specialty": "therapist",
+      "patients": [
+        998
+      ],
+      "firstName": "admin",
+      "lastName": "admin"
+    },
+    {
+      "id": 714,
+      "specialty": "therapist",
+      "patients": [
+        192
+      ],
+      "firstName": "admin",
+      "lastName": "adminovich"
+    }
+  ],
+  "users": [
+    {
+      "firstName": "Леся",
+      "lastName": "Вахула",
+      "email": "lesia@gmail.com",
+      "password": "111",
+      "cityName": "Львів",
+      "streetName": "Наукова",
+      "numberHouse": 112,
+      "choiceDoctor": "703",
+      "isDoctor": true,
+      "education": "вища",
+      "id": 266
+    },
+    {
+      "firstName": "33",
+      "lastName": "33",
+      "email": "33",
+      "password": "33",
+      "cityName": "33",
+      "streetName": "33",
+      "numberHouse": "33",
+      "choiceDoctor": "266",
+      "isDoctor": true,
+      "education": "1",
+      "id": 897
+    },
+    {
+      "firstName": "33",
+      "lastName": "33",
+      "email": "33",
+      "password": "33",
+      "cityName": "33",
+      "streetName": "33",
+      "numberHouse": "33",
+      "choiceDoctor": "266",
+      "isDoctor": false,
+      "history": [
+        {
+          "name": "bcg",
+          "exist": false,
+          "date": null
+        },
+        {
+          "name": "kir",
+          "exist": false,
+          "date": null
+        }
+      ],
+      "specialty": "therapist",
+      "education": "",
+      "id": 997
+    },
+    {
+      "firstName": "33",
+      "lastName": "33",
+      "email": "1",
+      "password": "1",
+      "cityName": "33",
+      "streetName": "33",
+      "numberHouse": "33",
+      "choiceDoctor": "",
+      "isDoctor": true,
+      "education": "1",
+      "id": 861
+    },
+    {
+      "firstName": "33",
+      "lastName": "33",
+      "email": "2",
+      "password": "2",
+      "cityName": "33",
+      "streetName": "33",
+      "numberHouse": "33",
+      "choiceDoctor": "266",
+      "isDoctor": false,
+      "history": [
+        {
+          "name": "bcg",
+          "exist": false,
+          "date": null
+        },
+        {
+          "name": "kir",
+          "exist": false,
+          "date": null
+        }
+      ],
+      "specialty": "therapist",
+      "education": "",
+      "id": 301
+    },
+    {
+      "firstName": "33",
+      "lastName": "33",
+      "email": "2",
+      "password": "2",
+      "cityName": "33",
+      "streetName": "33",
+      "numberHouse": "33",
+      "choiceDoctor": "266",
+      "isDoctor": false,
+      "history": [
+        {
+          "name": "bcg",
+          "exist": false,
+          "date": null
+        },
+        {
+          "name": "kir",
+          "exist": false,
+          "date": null
+        }
+      ],
+      "specialty": "therapist",
+      "education": "",
+      "id": 790
+    },
+    {
+      "firstName": "therapist",
+      "lastName": "therapist",
+      "email": "therapist",
+      "password": "1",
+      "cityName": "33",
+      "streetName": "33",
+      "numberHouse": "33",
+      "choiceDoctor": "266",
+      "isDoctor": true,
+      "education": "therapist",
+      "id": 345
+    },
+    {
+      "firstName": "33",
+      "lastName": "33",
+      "email": "33",
+      "password": "33",
+      "cityName": "33",
+      "streetName": "33",
+      "numberHouse": "33",
+      "choiceDoctor": "266",
+      "isDoctor": false,
+      "history": [
+        {
+          "name": "bcg",
+          "exist": false,
+          "date": null
+        },
+        {
+          "name": "kir",
+          "exist": false,
+          "date": null
+        }
+      ],
+      "specialty": "therapist",
+      "education": "",
+      "id": 898
+    },
+    {
+      "firstName": "33",
+      "lastName": "33",
+      "email": "44",
+      "password": "44",
+      "cityName": "33",
+      "streetName": "33",
+      "numberHouse": "33",
+      "choiceDoctor": "345",
+      "isDoctor": false,
+      "history": [
+        {
+          "name": "bcg",
+          "exist": false,
+          "date": null
+        },
+        {
+          "name": "kir",
+          "exist": false,
+          "date": null
+        }
+      ],
+      "specialty": "therapist",
+      "education": "",
+      "id": 503
+    },
+    {
+      "firstName": "55",
+      "lastName": "33",
+      "email": "55",
+      "password": "33",
+      "cityName": "33",
+      "streetName": "33",
+      "numberHouse": "33",
+      "choiceDoctor": "266",
+      "isDoctor": false,
+      "history": [
+        {
+          "name": "bcg",
+          "exist": false,
+          "date": null
+        },
+        {
+          "name": "kir",
+          "exist": false,
+          "date": null
+        }
+      ],
+      "education": "55",
+      "id": 903
+    },
+    {
+      "firstName": "Fedir",
+      "lastName": "Vakhula",
+      "email": "Fedir@gmail.com",
+      "password": "123",
+      "cityName": "lviv",
+      "streetName": "nauk",
+      "numberHouse": 112,
+      "choiceDoctor": "266",
+      "isDoctor": false,
+      "history": [
+        {
+          "name": "bcg",
+          "exist": true,
+          "date": null
+        },
+        {
+          "name": "kir",
+          "exist": true,
+          "date": null
+        }
+      ],
+      "specialty": "therapist",
+      "education": "",
+      "id": 26
+    },
+    {
+      "firstName": "111",
+      "lastName": "111",
+      "email": "lesia@gmail.com",
+      "password": "111",
+      "cityName": "1",
+      "streetName": "1",
+      "numberHouse": 1,
+      "choiceDoctor": "266",
+      "isDoctor": false,
+      "history": [
+        {
+          "name": "bcg",
+          "exist": true,
+          "date": null
+        },
+        {
+          "name": "kir",
+          "exist": false,
+          "date": null
+        }
+      ],
+      "specialty": "therapist",
+      "education": "",
+      "id": 918
+    },
+    {
+      "firstName": "admin",
+      "lastName": "adminovich",
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "cityName": "Lviv",
+      "streetName": "upa",
+      "numberHouse": 28,
+      "choiceDoctor": "",
+      "isDoctor": true,
+      "education": "junior",
+      "id": 714
+    },
+    {
+      "firstName": "user",
+      "lastName": "userevich",
+      "email": "user@gmail.com",
+      "password": "user",
+      "cityName": "kyiv",
+      "streetName": "str",
+      "numberHouse": 77,
+      "choiceDoctor": "714",
+      "isDoctor": false,
+      "specialty": "therapist",
+      "education": "",
+      "id": 192,
+      "history": [
+        {
+          "name": "bcg",
+          "exist": false,
+          "date": null
+        },
+        {
+          "name": "kir",
+          "exist": true,
+          "date": null
+        }
+      ]
+    },
+    {
+      "firstName": "Леся",
+      "lastName": "Лесівна",
+      "email": "lesia@gmail.com",
+      "password": "111",
+      "cityName": "Львів",
+      "streetName": "Городоцька",
+      "numberHouse": 112,
+      "choiceDoctor": "345",
+      "isDoctor": false,
+      "specialty": "therapist",
+      "education": "",
+      "id": 894,
+      "history": [
+        {
+          "name": "bcg",
+          "exist": false,
+          "date": null
+        },
+        {
+          "name": "kir",
+          "exist": false,
+          "date": null
+        }
+      ]
+    }
+  ]
+}
