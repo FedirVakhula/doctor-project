@@ -1,26 +1,28 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { LoginSevice } from '../service/login-sevice.service';
-import { Subject, Observer, Observable } from 'rxjs';
+import { Subject, Observer, Observable, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements OnInit, OnDestroy {
 
-  public show;
+  public show: boolean;
+  public res: Subscription;
 
   constructor(private loginSevice: LoginSevice) { }
 
   ngOnInit() {
-    // this.show = !this.loginSevice.log;
-    // this.chanel$.next(this.show);
-    const res = this.loginSevice.chanel$.subscribe((data) => this.show = data);
-    console.log(res);
+    this.res = this.loginSevice.chanel$.subscribe((data) => this.show = data);
   }
 
   logOut(): void {
     this.loginSevice.logOut();
+  }
+
+  ngOnDestroy() {
+    this.res.unsubscribe();
   }
 }
