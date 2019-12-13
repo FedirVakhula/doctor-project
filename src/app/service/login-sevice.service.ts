@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, Subject, throwError, forkJoin, Observer } from 'rxjs';
+import { Observable, Subject, throwError, forkJoin, Observer, BehaviorSubject } from 'rxjs';
 import { IUser, IDoctor } from '../models/models';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { catchError, map, tap, switchMap, filter, mergeMap } from 'rxjs/operators';
@@ -17,6 +17,7 @@ export class LoginSevice {
   private usersUrlDoc = 'http://localhost:3000/doctors';
 
   public errorMessageSub = new Subject();
+  public chanel$ = new BehaviorSubject(true);
   public log = true;
   public myId: number;
   public logIsDoctor = false;
@@ -61,6 +62,7 @@ export class LoginSevice {
         }
         localStorage.setItem('ACCESS_TOKEN', Math.floor(Math.random() * 1000).toString());
         this.log = false;
+        this.chanel$.next(false);
       }
       this.errorMessageSub.next(!!user);
     });
@@ -88,6 +90,7 @@ export class LoginSevice {
     this.router.navigateByUrl('/home');
     localStorage.removeItem('ACCESS_TOKEN');
     this.log = true;
+    this.chanel$.next(true);
     this.logIsDoctor = false;
   }
 
