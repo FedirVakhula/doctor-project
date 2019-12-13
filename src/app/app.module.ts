@@ -12,6 +12,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RegistrationFormComponent } from './registration-form/registration-form.component';
 import { DocComponent } from './doc/doc.component';
 import { DocInfoComponent } from './doc/doc-info/doc-info.component';
+import { DepartmentDocInfoComponent } from './department/department-doc-info/department-doc-info.component';
+import { OrganizerModule } from './organizer/organizer.module';
 
 
 @NgModule({
@@ -25,7 +27,8 @@ import { DocInfoComponent } from './doc/doc-info/doc-info.component';
     LoginComponent,
     RegistrationFormComponent,
     DocComponent,
-    DocInfoComponent
+    DocInfoComponent,
+    DepartmentDocInfoComponent
   ],
   imports: [
     FormsModule,
@@ -34,6 +37,7 @@ import { DocInfoComponent } from './doc/doc-info/doc-info.component';
     CoreModule,
     UsersModule,
     HttpClientModule,
+    OrganizerModule,
     AppRoutingModule
   ],
   providers: [],

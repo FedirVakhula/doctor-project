@@ -6,7 +6,9 @@
   </div>
   <hr>
   <div *ngIf="myDoc" class="container-user container-information">
-    <h3>Ваш сімейний лікар</h3>
+    <div>
+      <h3>Ваш сімейний лікар:</h3>
+    </div>
     <div>
       <p>{{myDoc.firstName}} {{myDoc.lastName}}</p>
     </div>
@@ -14,7 +16,7 @@
       <p>{{myDoc.specialty}}</p>
     </div>
     <div>
-      <button>Записатися</button>
+      <button (click)="goOrganize(myDoc.id)">Записатися</button>
     </div>
   </div>
   <div *ngFor="let message of list" class="container-user">
@@ -26,7 +28,7 @@
         <p>{{message.specialty}}</p>
       </div>
       <div>
-        <button>Записатися</button>
+        <button (click)="goOrganize(myDoc.id)">Записатися</button>
       </div>
     </div>
   </div>

@@ -1,4 +1,8 @@
-<div *ngIf="patients">
+<div *ngIf="patients" class="main-container">
+  <div>
+    <button class="schedule" (click)="goOrganize()">росклад прийому</button>
+  </div>
+  <hr>
   <div class="container-information">
     <p for="">Імя та прізвеще</p>
     <p for="">Адреса</p>

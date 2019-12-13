@@ -19,6 +19,7 @@ export class LoginSevice {
   public errorMessageSub = new Subject();
   public log = true;
   public myId: number;
+  public logIsDoctor = false;
 
   constructor(
     private http: HttpClient,
@@ -51,7 +52,13 @@ export class LoginSevice {
       const user = data.find((el: IUser) => el.email === email && el.password === password);
       if (user) {
         this.myId = user.id;
-        !user.isDoctor ? this.router.navigateByUrl('/user') : this.router.navigateByUrl('/doc');
+        if (!user.isDoctor) {
+          this.router.navigateByUrl('/user');
+          this.logIsDoctor = false;
+        } else {
+          this.router.navigateByUrl('/doc');
+          this.logIsDoctor = true;
+        }
         localStorage.setItem('ACCESS_TOKEN', Math.floor(Math.random() * 1000).toString());
         this.log = false;
       }
@@ -64,6 +71,10 @@ export class LoginSevice {
       .pipe(map((data: IUser[]) => data.find((el: IUser) => el.id === +id)));
   }
 
+  public getListUser(specialty: string) {
+    return this.getDoc()
+      .pipe(map((data) => data.filter((el) => el.specialty === specialty)));
+  }
 
   public isLoggedIn() {
     return localStorage.getItem('ACCESS_TOKEN') !== null;
@@ -77,6 +88,7 @@ export class LoginSevice {
     this.router.navigateByUrl('/home');
     localStorage.removeItem('ACCESS_TOKEN');
     this.log = true;
+    this.logIsDoctor = false;
   }
 
   public addUser(body: IUser, doctor_id?: string): Observable<any> {

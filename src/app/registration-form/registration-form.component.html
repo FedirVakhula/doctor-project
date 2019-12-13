@@ -17,6 +17,8 @@
           ім'я повине мати не менше трьох символів
         </span>
       </span>
+    </div>
+    <div class="input-control">
       <label for="lastName">Прізвище</label>
       <input type="text" placeholder="Прізвище" formControlName="lastName" 
       [ngClass]="{'has-error': (registrationForm.get('lastName').touched || registrationForm.get('lastName').dirty)
@@ -27,7 +29,7 @@
             будь-ласка введіть ім'я
           </span>
           <span *ngIf="registrationForm.get('lastName').hasError('minlength')">
-            ім'я повине мати не менше трьох символів
+            прізвище повине мати не менше трьох символів
           </span>
         </span>
     </div>
@@ -45,18 +47,20 @@
             будь-ласка введіть коректний email
           </span>
         </span>
-      <label for="password">пароль</label>
-      <input type="password" placeholder="пароль" formControlName="password"
-        [ngClass]="{'has-error': (registrationForm.get('password').touched ||
-        registrationForm.get('password').dirty)
-        &&
-        !registrationForm.get('password').valid }">
-        <span class="help-block" *ngIf="registrationForm.get('password').errors">
-          <span *ngIf="registrationForm.get('password').hasError('required')">
-            будь-ласка введіть пароль
+      </div>
+      <div class="input-control">
+        <label for="password">пароль</label>
+        <input type="password" placeholder="пароль" formControlName="password"
+          [ngClass]="{'has-error': (registrationForm.get('password').touched ||
+          registrationForm.get('password').dirty)
+          &&
+          !registrationForm.get('password').valid }">
+          <span class="help-block" *ngIf="registrationForm.get('password').errors">
+            <span *ngIf="registrationForm.get('password').hasError('required')">
+              будь-ласка введіть пароль
+            </span>
           </span>
-        </span>
-    </div>
+      </div>
     <div class="input-control">
       <label for="lastName">адреса</label>
       <input type="text" placeholder="місто" formControlName="cityName"
@@ -68,27 +72,31 @@
             будь-ласка введіть місто
           </span>
         </span>
-      <input type="text" placeholder="вулиця" formControlName="streetName"
-        [ngClass]="{'has-error': (registrationForm.get('streetName').touched ||
-        registrationForm.get('streetName').dirty)
-        &&
-        !registrationForm.get('streetName').valid }">
-        <span class="help-block" *ngIf="registrationForm.get('streetName').errors">
-          <span *ngIf="registrationForm.get('streetName').hasError('required')">
-            будь-ласка введіть вулицю
+      </div>
+      <div class="input-control">
+        <input type="text" placeholder="вулиця" formControlName="streetName"
+          [ngClass]="{'has-error': (registrationForm.get('streetName').touched ||
+          registrationForm.get('streetName').dirty)
+          &&
+          !registrationForm.get('streetName').valid }">
+          <span class="help-block" *ngIf="registrationForm.get('streetName').errors">
+            <span *ngIf="registrationForm.get('streetName').hasError('required')">
+              будь-ласка введіть вулицю
+            </span>
           </span>
-        </span>
-      <input type="number" placeholder="номер будинку" formControlName="numberHouse"
-        [ngClass]="{'has-error': (registrationForm.get('numberHouse').touched ||
-        registrationForm.get('numberHouse').dirty)
-        &&
-        !registrationForm.get('numberHouse').valid }">
-        <span class="help-block" *ngIf="registrationForm.get('numberHouse').errors">
-          <span *ngIf="registrationForm.get('numberHouse').hasError('required')">
-            будь-ласка введіть номер будинку
+      </div>
+      <div class="input-control">
+        <input type="number" placeholder="номер будинку" formControlName="numberHouse"
+          [ngClass]="{'has-error': (registrationForm.get('numberHouse').touched ||
+          registrationForm.get('numberHouse').dirty)
+          &&
+          !registrationForm.get('numberHouse').valid }">
+          <span class="help-block" *ngIf="registrationForm.get('numberHouse').errors">
+            <span *ngIf="registrationForm.get('numberHouse').hasError('required')">
+              будь-ласка введіть номер будинку
+            </span>
           </span>
-        </span>
-    </div>
+      </div>
     <div class="input-control" *ngIf="!registrationForm.get('isDoctor').value">
       <label for="">виберіть сімейного лікаря</label>
       <select class="select-form"
@@ -122,10 +130,18 @@
         registrationForm.get('specialty').dirty)
         &&
         !registrationForm.get('specialty').valid }">
-        <option selected value="therapist">Сімейний лікар</option>
-        <option value="oculist">Окуліст</option>
-        <option value="surgeon">Хірург</option>
-        <option value="traumatologist">Травматолог</option>
+        <option selected value="therapist">СІМЕЙНИЙ ЛІКАР</option>
+        <option value="lor">ЛОР</option>
+        <option value="surgeon">ХІРУРГ</option>
+        <option value="traumatologist">ТРАВМАТОЛОГ</option>
+        <option value="baby-medication">ДИТЯЧИЙ ПЕДІАТР</option>
+        <option value="pediatric-surgeon">ДИТЯЧИЙ ХІРУРГ</option>
+        <option value="gynecology">ГІНЕКОЛОГ</option>
+        <option value="cardiologist">КАРДІОЛОГ</option>
+        <option value="mammologist">МАМОЛОГ</option>
+        <option value="neurosurgeon">НЕЙРОХІРУРГ</option>
+        <option value="oncologist">ОНКОЛОГ</option>
+
       </select>
       <span class="help-block" *ngIf="registrationForm.get('specialty').errors">
         <span *ngIf="registrationForm.get('specialty').hasError('required')">
@@ -145,8 +161,8 @@
         </span>
     </div>
     <div class="input-control input-control-button">
-      <button (click)="onRegistwrUser()" type="submit" [disabled]="!registrationForm.valid">зареєструватися</button>
       <button (click)="goBack()">повернутися</button>
+      <button (click)="onRegistwrUser()" type="submit" [disabled]="!registrationForm.valid">зареєструватися</button>
     </div>
   </form>
 </div>

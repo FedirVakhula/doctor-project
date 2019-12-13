@@ -7,6 +7,8 @@ import { RegistrationFormComponent } from './registration-form/registration-form
 import { DocComponent } from './doc/doc.component';
 import { DocInfoComponent } from './doc/doc-info/doc-info.component';
 import { ContactComponent } from './core/components/contact/contact.component';
+import { DepartmentDocInfoComponent } from './department/department-doc-info/department-doc-info.component';
+import { OrganizerComponent } from './organizer/organizer/organizer.component';
 
 const routes: Routes = [
     {
@@ -36,8 +38,24 @@ const routes: Routes = [
         component: DocInfoComponent,
     },
     {
+        path: 'home/:id',
+        component: DepartmentDocInfoComponent,
+    },
+    {
         path: 'registration',
         component: RegistrationFormComponent
+    },
+    {
+        path: 'organize',
+        component: OrganizerComponent
+    },
+    {
+        path: 'organize/:id',
+        component: OrganizerComponent
+    },
+    {
+        path: 'user/:id',
+        component: OrganizerComponent
     },
     {
         path: '',

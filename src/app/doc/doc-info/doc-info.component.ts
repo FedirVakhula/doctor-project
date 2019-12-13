@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { Location } from '@angular/common';
 import { LoginSevice } from 'src/app/service/login-sevice.service';
 import { IUser } from 'src/app/models/models';
-import { switchMap, map, filter } from 'rxjs/operators';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 

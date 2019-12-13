@@ -1,14 +1,17 @@
 .continer-news {
   display: flex;
-  width: 97%;
+  justify-content: center;
+  width: 100%;
   text-decoration: none;
-  height: 20%;
-  border: solid 1px;
-  background: rgb(16, 179, 171);
+  height: 100%;
+  background: rgb(0, 215, 255);
+  background: linear-gradient(74deg, rgba(0, 209, 255, 1) 0%, rgba(37, 212, 245, 1) 65%, rgba(0, 75, 164, 1) 100%);
+  color: white;
+  margin-top: 10px;
 }
 
-.continer-news div {
-  margin: 1%;
+form div {
+  margin: 20% 0;
 }
 
 .news-paper {
@@ -30,11 +33,6 @@ img {
   width: 50%;
 }
 
-.container-foto {
-  padding: 3%;
-  width: 30%;
-}
-
 h2 {
     margin-bottom: 0px;
 }
@@ -44,4 +42,17 @@ h2 {
 .has-error input[type="password"] {
   border-color: rgb(216, 12, 12);
   color: rgb(230, 14, 14);
+}
+
+button {
+  width: 100%;
+  background: crimson;
+  height: 30px;
+  margin: 10px 0;
+  color: white;
+  cursor: pointer;
+}
+
+.container-article {
+  height: 50%;
 }

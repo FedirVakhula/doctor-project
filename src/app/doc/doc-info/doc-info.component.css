@@ -3,13 +3,16 @@
   justify-content: space-between;
   align-items: center;
   margin: 3% 0;
-  padding: 1%;
 
 }
 
 .user-information {
   display: flex;
-  background: rgb(255, 255, 0);
+  justify-content: space-between;
+  background: rgb(12, 133, 233);
+  color: white;
+  padding: 2%;
+  width: 40%;
 }
 
 :host {
@@ -17,11 +20,18 @@
 }
 
 .container-information-user {
-  border: solid 1px;
-  background: rgb(93, 192, 209);
+  background: rgb(12, 133, 233);
+  color: white;
   display: flex;
 }
 
 .container-information-user div {
   margin: 2%;
+}
+
+button {
+  background: #dc143c;
+  width: 300px;
+  color: #ffffff;
+  height: 30px;
 }

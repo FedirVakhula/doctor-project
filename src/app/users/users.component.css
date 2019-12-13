@@ -47,9 +47,17 @@ img {
 
 .container-user {
   border: solid 1px;
-  background: rgb(93, 192, 209);
+  background: rgb(12, 133, 233);
+  color: white;
 }
 
 :host {
   width: 72%;
+}
+
+button {
+  background: #dc143c;
+  width: 100px;
+  color: #ffffff;
+  height: 30px;
 }

@@ -1,18 +1,22 @@
 <div class="container-footer">
   <div class="logo-company">
     <a href="#" routerLink="/home">
-      <img src="/src/assets/9bd0dbfef132c21955156ae83f96d832_416.jpg" alt="logo">
+      <img
+        src="../../assets/images/physician-logo-medicine-clip-art-pictures-of-medical-symbols.png"
+        alt="logo">
     </a>
     <h1>Company name</h1>
   </div>
-  <div class="button-Log-Out">
+  <div class="menu-container">
     <div>
       <menu>
-        <a href="#">НА ГОЛОВНУ</a>
-        <a routerLink="/about">ПРО НАС</a>
+        <a routerLink="/home">НА ГОЛОВНУ</a>
+        <a routerLink="/about">ПРО ПРОЕКТ</a>
         <a routerLink="/contact">КОНТАКТИ</a>
       </menu>
     </div>
-      <button (click)="logOut()">Вихід</button>
+  </div>
+  <div class="btn-log-out">
+    <button *ngIf="!this.loginSevice.log" (click)=" logOut()">Вихід</button>
   </div>
 </div>

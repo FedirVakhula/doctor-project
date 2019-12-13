@@ -1,0 +1,41 @@
+input {
+    width: 99%;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    background: crimson;
+    border: none;
+    color: white;
+    height: 30px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.btn {
+    width: 30%;
+}
+
+section {
+    border: 1px solid #000000;
+    padding: 1rem;
+}
+
+header {
+    margin-bottom: 1rem;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    border: 1px solid #cccccc;
+    margin-bottom: .5rem;
+    width: 96%;
+}
+
+ul {
+    padding: 0;
+}

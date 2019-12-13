@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { AboutComponent, PathNotFoundComponent } from '.';
 import { ContactComponent } from './components/contact/contact.component';
 
+
 @NgModule({
   imports: [
     CommonModule

@@ -1,20 +1,4 @@
-.container {
-    padding: 3%;
-}
-
-.displey-row {
-    display: flex;
-}
-
-.displey-row>div {
-    margin-left: 3%;
-}
-
-.displey-row >a{
-  display: flex;
-  align-items: center;
-}
-
-div>p {
-  margin: 0;
+p {
+  margin: 10%;
+  font-size: 22px;
 }

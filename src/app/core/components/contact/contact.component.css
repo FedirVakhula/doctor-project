@@ -1,8 +1,32 @@
+.container {
+  padding: 3%;
+}
+
 .displey-row {
+  display: flex;
+}
+
+.displey-row>div {
+  margin-left: 3%;
+}
+
+.displey-row>a {
   display: flex;
   align-items: center;
 }
 
 div>p {
-    margin: 0;
+  margin: 0;
+}
+
+#map {
+  width: 100%;
+  height: 655px;
+  background-color: grey;
+}
+
+.created-by {
+  height: 75px;
+  display: flex;
+  align-items: center;
 }

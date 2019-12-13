@@ -46,7 +46,10 @@ export class DocComponent implements OnInit {
   public info(list) {
     const link = ['/doc', list.id];
     this.router.navigate(link);
+  }
 
+  public goOrganize() {
+    this.router.navigateByUrl('organize');
   }
 
 }

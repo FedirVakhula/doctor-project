@@ -18,7 +18,8 @@ form {
 .reg-form {
     border: solid 1px;
     width: 100%;
-    background: rgb(93, 192, 209);
+    background: rgb(12, 133, 233);
+    color: white;
 }
 
 .input-control {
@@ -43,9 +44,16 @@ select {
 }
 
 .help-block {
-    color: rgb(170, 36, 36);
+    color: rgb(0, 0, 0);
 }
 
 .has-error {
-    border: rgb(170, 36, 36) solid 2px;
+    border: rgb(255, 0, 0) solid 2px;
+}
+
+button {
+  background: #dc143c;
+  width: 300px;
+  color: #ffffff;
+  height: 30px;
 }
