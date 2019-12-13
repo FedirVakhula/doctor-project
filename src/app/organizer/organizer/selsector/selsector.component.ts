@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DateService } from '../../service/date.service';
+import * as moment from 'moment';
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'app-selsector',
@@ -8,9 +10,13 @@ import { DateService } from '../../service/date.service';
 })
 export class SelsectorComponent implements OnInit {
 
+  public date: BehaviorSubject<moment.Moment>;
+
   constructor(private dateService: DateService) { }
 
+
   ngOnInit() {
+    this.date = this.dateService.date;
   }
 
   go (value: number) {
